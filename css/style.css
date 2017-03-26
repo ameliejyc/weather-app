@@ -1,0 +1,87 @@
+body {
+   background-color: lightblue;
+}
+
+.container {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.weather-container {
+    width: 35%;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1.5%;
+
+  }
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+    }
+
+    h2 {
+        font-family: 'Droid Serif', serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 25px;
+        line-height: 23px;
+        margin: 0 0 35px 0;
+        }
+
+#temp {
+    font-size: 80px;
+    margin: 0 0 30px 0;
+}
+
+#type {
+    font-size: 45px;
+    margin: 0 0 20px 0;
+}
+
+.button {
+    font-family: 'Droid Serif', serif;
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    border-color: black;
+    border-width: thick;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    margin: 10px 0 30px 0;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.button:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+    line-height: 23px;
+    margin: none;
+    font-style: italic;
+}
+
+footer {
+   padding: 1.5%;
+   color: black;
+}
+
+a:hover {
+   color: grey;
+}
+
+@media screen and (max-width: 768px) {
+  .weather-container {
+     width: 60%;
+  }
