@@ -4,7 +4,7 @@ $(document).ready(function() {
   var backgroundImage;
 
 // Using the IP api method:
-  var urlLocation = "http://ip-api.com/json";
+  var urlLocation = "https://cors-anywhere.herokuapp.com/http://ip-api.com/json";
   $.getJSON(urlLocation, function(location) {
     var lat = location.lat;
     var lon = location.lon;
