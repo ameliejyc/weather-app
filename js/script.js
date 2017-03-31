@@ -4,7 +4,7 @@ $(document).ready(function() {
   var backgroundImage;
 
 // Using the IP api method:
-  var urlLocation = "https://cors-anywhere.herokuapp.com/http://ip-api.com/json";
+  var urlLocation = "http://ip-api.com/json";
   $.getJSON(urlLocation, function(location) {
     var lat = location.lat;
     var lon = location.lon;
@@ -66,15 +66,7 @@ $(document).ready(function() {
         $('body').css({
           "background-color": "lightblue"
         });
-      } else if (backgroundImage < 11) {
-        $('.container').css({
-          "background-image": "url(images/grey.jpg)",
-          "background-repeat": "no-repeat"
-        })
-        $('body').css({
-          "background-color": "lightgrey"
-        });
-      } else if (backgroundImage <  50) {
+      } else if (backgroundImage < 12) {
         $('.container').css({
           "background-image": "url(images/rainy.jpg)",
           "background-repeat": "no-repeat"
@@ -82,13 +74,21 @@ $(document).ready(function() {
         $('body').css({
           "background-color": "lightblue"
         });
-      } else {
+      } else if (backgroundImage <  50) {
         $('.container').css({
           "background-image": "url(images/snowy.jpg)",
           "background-repeat": "no-repeat"
         })
         $('body').css({
           "background-color": "white"
+        });
+      } else {
+        $('.container').css({
+          "background-image": "url(images/grey.jpg)",
+          "background-repeat": "no-repeat"
+        })
+        $('body').css({
+          "background-color": "lightgrey"
         });
       };
   });
